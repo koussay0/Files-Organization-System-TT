@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Tunisie Telecom - File Processor{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="app-header py-3 mb-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>
+        <h1 class="app-title mb-1">TT File Processor</h1>
+        <p class="app-subtitle mb-0">File clean-up, comparison, merge and export tools in one modern dashboard.</p>
+      </div>
+      <nav class="nav nav-pills nav-fill w-100 w-md-auto">
+        <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>
+        <a class="nav-link" href="{{ url_for('single_file.home') }}">Single File</a>
+        <a class="nav-link" href="{{ url_for('multi_file.home') }}">Compare Files</a>
+        <a class="nav-link" href="{{ url_for('multi_file.merge') }}">Merge Files</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show rounded-4 shadow-sm" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="app-footer py-4 bg-dark text-light">
+    <div class="container text-center small">Tunisie Telecom File Processor © 2026 · Built for data cleaning and reporting</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

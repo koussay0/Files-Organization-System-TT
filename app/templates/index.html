@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dashboard-grid mb-4">
+  <section class="dashboard-card shadow-sm">
+    <h2>Single File</h2>
+    <p>Upload one file and process it with sorting, duplicate cleanup, template export, and column transformations.</p>
+    <a class="btn btn-primary" href="{{ url_for('single_file.home') }}">Start</a>
+  </section>
+  <section class="dashboard-card shadow-sm">
+    <h2>File Comparison</h2>
+    <p>Compare two files by row or column and export differences or matching records in multiple formats.</p>
+    <a class="btn btn-primary" href="{{ url_for('multi_file.home') }}">Compare</a>
+  </section>
+  <section class="dashboard-card shadow-sm">
+    <h2>Merge Files</h2>
+    <p>Select columns from both inputs and combine them into a single result, ready to export.</p>
+    <a class="btn btn-primary" href="{{ url_for('multi_file.merge') }}">Merge</a>
+  </section>
+</div>
+<div class="feature-panel p-4 rounded-4 shadow-sm bg-white">
+  <h3>What’s new</h3>
+  <ul class="feature-list mb-0">
+    <li>PDF input support + Excel/Text/CSV upload</li>
+    <li>Custom template generation and export</li>
+    <li>Split large files into multiple output files</li>
+    <li>Modern dashboard layout and improved color theme</li>
+  </ul>
+</div>
+{% endblock %}

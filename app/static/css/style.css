@@ -1,0 +1,121 @@
+body {
+    background: radial-gradient(circle at top left, #e8f0ff 0%, #f8fbff 40%, #f3f7fb 100%);
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.app-header {
+    background: linear-gradient(135deg, #0f4c81 0%, #1768ac 100%);
+    color: #fff;
+    border-radius: 0 0 28px 28px;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.app-subtitle {
+    opacity: 0.85;
+}
+
+.app-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-card,
+.feature-panel,
+.upload-panel,
+.preview-panel,
+.module-panel,
+.stat-card {
+    border: none;
+    border-radius: 1.5rem;
+    background: #ffffff;
+}
+
+.dashboard-card {
+    padding: 1.8rem;
+}
+
+.dashboard-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-panel {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f2f4f7;
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(15, 23, 43, 0.08);
+}
+
+.stat-card {
+    min-height: 120px;
+}
+
+.stat-card h6 {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.table-responsive {
+    max-height: 520px;
+    overflow-y: auto;
+}
+
+.card,
+.upload-panel,
+.preview-panel,
+.module-panel,
+.stat-card {
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.btn-primary,
+.btn-outline-primary {
+    border-radius: 12px;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #ffffff !important;
+}

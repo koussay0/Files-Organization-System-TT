@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header mb-4">
+  <div>
+    <h2>Detect Sequences</h2>
+    <p class="text-muted">Find ordered numeric sequences in a column or across row values.</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Back</a>
+</div>
+
+<div class="card card-body shadow-sm mb-4">
+  <form method="post">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Sequence mode</label>
+        <select class="form-select" name="mode">
+          <option value="column">Within a specific column</option>
+          <option value="row">Across numeric values in each row</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Column</label>
+        <select class="form-select" name="column">
+          {% for col in columns %}
+            <option value="{{ col }}">{{ col }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Minimum sequence length</label>
+        <input class="form-control" type="number" name="min_length" value="3" min="2">
+      </div>
+    </div>
+    <div class="mt-4 text-end">
+      <button class="btn btn-primary" type="submit">Detect</button>
+    </div>
+  </form>
+</div>
+
+{% if summary_html %}
+  <div class="d-flex flex-wrap gap-2 mb-3">
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Export CSV</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Export Excel</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Export TXT</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Export PDF</a>
+  </div>
+  <div class="card card-body shadow-sm">
+    <h5 class="mb-3">Detected sequences</h5>
+    <div class="table-responsive">{{ summary_html | safe }}</div>
+  </div>
+{% endif %}
+{% endblock %}

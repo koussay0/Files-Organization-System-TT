@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header mb-4">
+  <div>
+    <h2>Single File Processing</h2>
+    <p class="text-muted">Upload a file and choose from the available processing modules.</p>
+  </div>
+  <a class="btn btn-outline-primary" href="{{ url_for('main.index') }}">Back to Dashboard</a>
+</div>
+
+<form method="post" enctype="multipart/form-data" class="card card-body mb-4 shadow-sm upload-panel">
+  <div class="row g-3 align-items-end">
+    <div class="col-md-8">
+      <label class="form-label">Choose a CSV, TXT, Excel, or PDF file</label>
+      <input class="form-control" type="file" name="data_file" accept=".csv,.txt,.xls,.xlsx,.pdf" required>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <button class="btn btn-primary btn-lg w-100" type="submit">Upload &amp; Analyze</button>
+    </div>
+  </div>
+</form>
+
+{% if stats %}
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="stat-card shadow-sm p-3 rounded-4 bg-white">
+        <h6 class="text-uppercase text-secondary">Rows</h6>
+        <p class="stat-value">{{ stats.n_rows }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card shadow-sm p-3 rounded-4 bg-white">
+        <h6 class="text-uppercase text-secondary">Columns</h6>
+        <p class="stat-value">{{ stats.n_columns }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card shadow-sm p-3 rounded-4 bg-white">
+        <h6 class="text-uppercase text-secondary">Field names</h6>
+        <p class="stat-value">{{ stats.columns | join(", ") }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-4 shadow-sm module-panel">
+    <div class="card-body">
+      <h5 class="card-title">Available actions</h5>
+      <div class="d-flex flex-wrap gap-2">
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.sort') }}">Sort</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.duplicates') }}">Duplicates</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.sequences') }}">Sequences</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.split') }}">Split</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.template') }}">Template</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('single_file.transform') }}">Transform</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow-sm preview-panel">
+    <div class="card-body">
+      <h5 class="card-title">Preview (first 20 rows)</h5>
+      <div class="table-responsive">
+        {{ preview_html | safe }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}

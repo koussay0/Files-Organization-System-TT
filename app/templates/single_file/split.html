@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header mb-4">
+  <div>
+    <h2>Split File</h2>
+    <p class="text-muted">Split your dataset into smaller output files by file count or row count.</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Back</a>
+</div>
+
+<div class="card card-body shadow-sm">
+  <form method="post">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Split mode</label>
+        <select class="form-select" name="split_mode">
+          <option value="files">Number of result files</option>
+          <option value="rows">Rows per file</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Number of files</label>
+        <input class="form-control" type="number" name="n_files" min="1" value="2">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Rows per file</label>
+        <input class="form-control" type="number" name="rows_per_file" min="1" value="1000">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Export format</label>
+        <select class="form-select" name="fmt">
+          <option value="csv">CSV</option>
+          <option value="txt">TXT</option>
+          <option value="xlsx">Excel</option>
+        </select>
+      </div>
+    </div>
+    <div class="mt-4 text-end">
+      <button class="btn btn-primary" type="submit">Split and Download ZIP</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

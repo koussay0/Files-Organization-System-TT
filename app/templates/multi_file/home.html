@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header mb-4">
+  <div>
+    <h2>Compare Two Files</h2>
+    <p class="text-muted">Upload both files and choose whether to compare by row or by a selected column.</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="{{ url_for('main.index') }}">Back</a>
+</div>
+
+<div class="card card-body shadow-sm mb-4">
+  <form method="post" enctype="multipart/form-data">
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <label class="form-label">File 1</label>
+        <input class="form-control" type="file" name="file1" accept=".csv,.txt,.xls,.xlsx,.pdf" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">File 2</label>
+        <input class="form-control" type="file" name="file2" accept=".csv,.txt,.xls,.xlsx,.pdf" required>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Compare by</label>
+        <select class="form-select" name="mode">
+          <option value="row">Full row</option>
+          <option value="column">A specific column</option>
+        </select>
+      </div>
+      <div class="col-md-8">
+        <label class="form-label">Column name</label>
+        <input class="form-control" type="text" name="column" placeholder="e.g. MSISDN">
+      </div>
+    </div>
+    <div class="mt-4 text-end">
+      <button class="btn btn-primary" type="submit">Compare</button>
+    </div>
+  </form>
+</div>
+
+{% if results %}
+  {% for key, label in [("in_both", "In both files"), ("only_in_f1", "Only in File 1"), ("only_in_f2", "Only in File 2")] %}
+    <div class="card card-body shadow-sm mb-4">
+      <div class="d-flex align-items-center justify-content-between mb-3 gap-3">
+        <h5 class="mb-0">{{ label }}</h5>
+        <div class="btn-group">
+          <a class="btn btn-sm btn-success" href="{{ url_for('multi_file.export_comparison', result_key=key, fmt='csv') }}">CSV</a>
+          <a class="btn btn-sm btn-success" href="{{ url_for('multi_file.export_comparison', result_key=key, fmt='xlsx') }}">Excel</a>
+          <a class="btn btn-sm btn-success" href="{{ url_for('multi_file.export_comparison', result_key=key, fmt='txt') }}">TXT</a>
+          <a class="btn btn-sm btn-success" href="{{ url_for('multi_file.export_comparison', result_key=key, fmt='pdf') }}">PDF</a>
+        </div>
+      </div>
+      <div class="table-responsive">{{ results[key] | safe }}</div>
+    </div>
+  {% endfor %}
+{% endif %}
+{% endblock %}
