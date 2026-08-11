@@ -84,3 +84,8 @@ pytest tests/ -v
    Epic 8.
 4. Deploy behind gunicorn + nginx on the Tunisie Telecom intranet server
    (confirm with your supervisor whether one is available).
+
+   -----------
+   I am able to convert an executable file .exe of the application.
+   08/11/2026
+   
