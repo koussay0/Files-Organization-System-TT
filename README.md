@@ -89,4 +89,6 @@ pytest tests/ -v
    I am able to convert an executable file .exe of the application.
    08/11/2026
    File limit size is removed (used to be 1GB) 08/12/2026
+   UI updated and French added 08/14/2026
+   
    
