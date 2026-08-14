@@ -84,3 +84,11 @@ pytest tests/ -v
    Epic 8.
 4. Deploy behind gunicorn + nginx on the Tunisie Telecom intranet server
    (confirm with your supervisor whether one is available).
+
+   -----------
+   I am able to convert an executable file .exe of the application.
+   08/11/2026
+   File limit size is removed (used to be 1GB) 08/12/2026
+   UI updated and French added 08/14/2026
+   
+   
