@@ -6,7 +6,7 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[('app', 'app')],
-    hiddenimports=['pywebview.platforms.winforms', 'pythonnet'],
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['app/static/tt_file_processor.ico'],
+    icon=['icon.ico'],
 )

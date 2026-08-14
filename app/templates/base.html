@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ current_lang }}">
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Tunisie Telecom - File Processor{% endblock %}</title>
+  <title>{% block title %}{{ translations.app_name }}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
@@ -12,15 +12,26 @@
   <header class="app-header py-3 mb-4">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
       <div>
-        <h1 class="app-title mb-1">TT File Processor</h1>
-        <p class="app-subtitle mb-0">File clean-up, comparison, merge and export tools in one modern dashboard.</p>
+        <h1 class="app-title mb-1">{{ translations.app_name }}</h1>
+        <p class="app-subtitle mb-0">{{ translations.tagline }}</p>
       </div>
-      <nav class="nav nav-pills nav-fill w-100 w-md-auto">
-        <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>
-        <a class="nav-link" href="{{ url_for('single_file.home') }}">Single File</a>
-        <a class="nav-link" href="{{ url_for('multi_file.home') }}">Compare Files</a>
-        <a class="nav-link" href="{{ url_for('multi_file.merge') }}">Merge Files</a>
-      </nav>
+      <div class="d-flex align-items-center gap-3 flex-wrap justify-content-end">
+        <nav class="nav nav-pills nav-fill app-nav">
+          <a class="nav-link" href="{{ url_for('main.index') }}">{{ translations.home }}</a>
+          <a class="nav-link" href="{{ url_for('single_file.home') }}">{{ translations.single_file }}</a>
+          <a class="nav-link" href="{{ url_for('multi_file.home') }}">{{ translations.compare_files }}</a>
+          <a class="nav-link" href="{{ url_for('multi_file.merge') }}">{{ translations.merge_files }}</a>
+        </nav>
+        <div class="lang-picker">
+          <span class="lang-label">{{ translations.language }}</span>
+          <div class="btn-group btn-group-sm" role="group" aria-label="Language selector">
+            {% for item in lang_options %}
+              <a class="btn btn-sm {% if item.code == current_lang %}btn-light active{% else %}btn-outline-light{% endif %}"
+                 href="{{ url_for('main.set_language', lang=item.code) }}">{{ item.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -40,7 +51,7 @@
   </main>
 
   <footer class="app-footer py-4 bg-dark text-light">
-    <div class="container text-center small">Tunisie Telecom File Processor © 2026 · Built for data cleaning and reporting</div>
+    <div class="container text-center small">{{ translations.footer }}</div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
