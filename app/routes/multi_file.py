@@ -23,7 +23,7 @@ def home():
         mode = request.form.get("mode")
 
         if not file1 or not file2:
-            flash("Please upload both files.", "warning")
+            flash("Veuillez téléverser les deux fichiers.", "warning")
             return redirect(url_for("multi_file.home"))
 
         df1 = load_dataframe(file1)
@@ -51,7 +51,7 @@ def export_comparison(result_key, fmt):
     """Epic 9 applied to Epic 10 results: in_both / only_in_f1 / only_in_f2."""
     stored_name = session.get(f"compare_{result_key}")
     if not stored_name:
-        flash("Run a comparison first.", "warning")
+        flash("Veuillez d'abord lancer une comparaison.", "warning")
         return redirect(url_for("multi_file.home"))
 
     src_path = os.path.join(current_app.config["OUTPUT_FOLDER"], stored_name)
@@ -75,7 +75,7 @@ def merge():
         file2 = request.files.get("file2")
 
         if not file1 or not file2:
-            flash("Please upload both files.", "warning")
+            flash("Veuillez téléverser les deux fichiers.", "warning")
             return redirect(url_for("multi_file.merge"))
 
         df1 = load_dataframe(file1)

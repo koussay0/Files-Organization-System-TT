@@ -50,7 +50,7 @@ def home():
     if request.method == "POST":
         file = request.files.get("data_file")
         if not file or file.filename == "":
-            flash("Please choose a file to upload.", "warning")
+            flash("Veuillez choisir un fichier à téléverser.", "warning")
             return redirect(url_for("single_file.home"))
 
         try:
@@ -77,7 +77,7 @@ def sort():
     """Epic 2."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     result_html = None
@@ -101,7 +101,7 @@ def duplicates():
     """Epic 3."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     summary_html = None
@@ -123,7 +123,7 @@ def sequences():
     """Epic 4: detect sequential values in a column or across rows."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     columns = df.columns.tolist()
@@ -160,7 +160,7 @@ def split():
     """Epic 5: split the input file into multiple smaller files."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     if request.method == "POST":
@@ -175,7 +175,7 @@ def split():
                 rows_per_file = int(request.form.get("rows_per_file", 1))
                 chunks = ops.split_by_rows_per_file(df, rows_per_file)
         except ValueError:
-            flash("Please provide a valid split parameter.", "warning")
+            flash("Veuillez fournir un paramètre de division valide.", "warning")
             return redirect(url_for("single_file.split"))
 
         zip_buffer = io.BytesIO()
@@ -210,7 +210,7 @@ def template():
     """Epic 6: generate a new file format according to a template."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     columns = df.columns.tolist()
@@ -222,7 +222,7 @@ def template():
         separator = request.form.get("separator", "|")
 
         if "__SOURCE__" not in template_text:
-            flash("Template must include the placeholder __SOURCE__.", "warning")
+            flash("Le modèle doit inclure le placeholder __SOURCE__.", "warning")
             return redirect(url_for("single_file.template"))
 
         template_fields = [field.strip() for field in template_text.split(separator)]
@@ -238,7 +238,7 @@ def transform():
     """Epic 7-8: column-level transformations and structure edits."""
     df = _load_current_df()
     if df is None:
-        flash("Upload a file first.", "warning")
+        flash("Veuillez d'abord téléverser un fichier.", "warning")
         return redirect(url_for("single_file.home"))
 
     columns = df.columns.tolist()
@@ -280,7 +280,7 @@ def transform():
                 positions = [int(p.strip()) for p in positions_text.split(",") if p.strip().isdigit()]
                 transformed = ops.extract_columns(transformed, positions)
             else:
-                flash("Unknown transformation operation.", "warning")
+                flash("Opération de transformation inconnue.", "warning")
                 return redirect(url_for("single_file.transform"))
 
             _save_result_and_offer_download(transformed, base_name="transform")
@@ -297,7 +297,7 @@ def export_last_result(fmt):
     """Epic 9: download the last generated result in the chosen format."""
     stored_name = session.get("last_result")
     if not stored_name:
-        flash("Nothing to export yet — run an operation first.", "warning")
+        flash("Rien à exporter pour le moment — effectuez d'abord une opération.", "warning")
         return redirect(url_for("single_file.home"))
 
     src_path = os.path.join(current_app.config["OUTPUT_FOLDER"], stored_name)

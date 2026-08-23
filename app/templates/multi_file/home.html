@@ -2,45 +2,45 @@
 {% block content %}
 <div class="page-header mb-4">
   <div>
-    <h2>Compare Two Files</h2>
-    <p class="text-muted">Upload both files and choose whether to compare by row or by a selected column.</p>
+    <h2>Comparer deux fichiers</h2>
+    <p class="text-muted">Téléversez les deux fichiers et choisissez de comparer selon la ligne entière ou une colonne spécifique.</p>
   </div>
-  <a class="btn btn-outline-secondary" href="{{ url_for('main.index') }}">Back</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('main.index') }}">Retour</a>
 </div>
 
 <div class="card card-body shadow-sm mb-4">
   <form method="post" enctype="multipart/form-data">
     <div class="row g-3 mb-3">
       <div class="col-md-6">
-        <label class="form-label">File 1</label>
+        <label class="form-label">Fichier 1</label>
         <input class="form-control" type="file" name="file1" accept=".csv,.txt,.xls,.xlsx,.pdf" required>
       </div>
       <div class="col-md-6">
-        <label class="form-label">File 2</label>
+        <label class="form-label">Fichier 2</label>
         <input class="form-control" type="file" name="file2" accept=".csv,.txt,.xls,.xlsx,.pdf" required>
       </div>
     </div>
     <div class="row g-3">
       <div class="col-md-4">
-        <label class="form-label">Compare by</label>
+        <label class="form-label">Comparer par</label>
         <select class="form-select" name="mode">
-          <option value="row">Full row</option>
-          <option value="column">A specific column</option>
+          <option value="row">Ligne complète</option>
+          <option value="column">Une colonne spécifique</option>
         </select>
       </div>
       <div class="col-md-8">
-        <label class="form-label">Column name</label>
-        <input class="form-control" type="text" name="column" placeholder="e.g. MSISDN">
+        <label class="form-label">Nom de la colonne</label>
+        <input class="form-control" type="text" name="column" placeholder="ex. MSISDN">
       </div>
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" type="submit">Compare</button>
+      <button class="btn btn-primary" type="submit">Comparer</button>
     </div>
   </form>
 </div>
 
 {% if results %}
-  {% for key, label in [("in_both", "In both files"), ("only_in_f1", "Only in File 1"), ("only_in_f2", "Only in File 2")] %}
+  {% for key, label in [("in_both", "Présent dans les deux fichiers"), ("only_in_f1", "Seulement dans le fichier 1"), ("only_in_f2", "Seulement dans le fichier 2")] %}
     <div class="card card-body shadow-sm mb-4">
       <div class="d-flex align-items-center justify-content-between mb-3 gap-3">
         <h5 class="mb-0">{{ label }}</h5>

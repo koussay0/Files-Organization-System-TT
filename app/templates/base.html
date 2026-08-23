@@ -36,11 +36,11 @@
   </header>
 
   <main class="container mb-5">
-    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% with messages = flash_messages %}
       {% if messages %}
-        {% for category, message in messages %}
-          <div class="alert alert-{{ category }} alert-dismissible fade show rounded-4 shadow-sm" role="alert">
-            {{ message }}
+        {% for item in messages %}
+          <div class="alert alert-{{ item.category }} alert-dismissible fade show rounded-4 shadow-sm" role="alert">
+            {{ item.message }}
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
           </div>
         {% endfor %}

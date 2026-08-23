@@ -1,5 +1,8 @@
 import os
-from flask import Flask, redirect, request, session, url_for
+from flask import Flask, redirect, request, session, url_for, get_flashed_messages
+from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+from fastapi.middleware.wsgi import WSGIMiddleware
 
 
 def create_app():
@@ -9,7 +12,7 @@ def create_app():
         SECRET_KEY="dev-change-me",
         UPLOAD_FOLDER=os.path.join(app.instance_path, "uploads"),
         OUTPUT_FOLDER=os.path.join(app.instance_path, "outputs"),
-        MAX_CONTENT_LENGTH=None,  # No size limit
+        MAX_CONTENT_LENGTH=None,
     )
 
     translations = {
@@ -84,6 +87,10 @@ def create_app():
                 {"code": "en", "label": "EN"},
                 {"code": "fr", "label": "FR"},
             ],
+            "flash_messages": [
+                {"category": category, "message": message}
+                for category, message in get_flashed_messages(with_categories=True)
+            ],
         }
 
     @app.route('/favicon.ico')
@@ -101,4 +108,19 @@ def create_app():
     app.register_blueprint(single_file_bp, url_prefix="/single-file")
     app.register_blueprint(multi_file_bp, url_prefix="/two-files")
 
-    return app
+    fastapi_app = FastAPI(title="TT File Processor")
+
+    @fastapi_app.get("/")
+    async def root_route():
+        return RedirectResponse(url="/single-file/")
+
+    @fastapi_app.get("/single-file/")
+    async def single_file_route():
+        return RedirectResponse(url="/single-file/")
+
+    @fastapi_app.get("/two-files/")
+    async def two_files_route():
+        return RedirectResponse(url="/two-files/")
+
+    fastapi_app.mount("/", WSGIMiddleware(app))
+    return fastapi_app
