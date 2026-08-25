@@ -2,24 +2,24 @@
 {% block content %}
 <div class="page-header mb-4">
   <div>
-    <h2>Find & Remove Duplicates</h2>
-    <p class="text-muted">Identify duplicate rows or duplicate values in a specific column.</p>
+    <h2>Rechercher et supprimer les doublons</h2>
+    <p class="text-muted">Identifiez les lignes dupliquées ou les valeurs dupliquées dans une colonne spécifique.</p>
   </div>
-  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Back</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Retour</a>
 </div>
 
 <div class="card card-body shadow-sm mb-4">
   <form method="post">
     <div class="row g-3">
       <div class="col-md-4">
-        <label class="form-label">Check duplicates by</label>
+        <label class="form-label">Vérifier les doublons par</label>
         <select class="form-select" name="mode">
-          <option value="row">Full row</option>
-          <option value="column">A specific column</option>
+          <option value="row">Ligne complète</option>
+          <option value="column">Une colonne spécifique</option>
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Column</label>
+        <label class="form-label">Colonne</label>
         <select class="form-select" name="column">
           {% for col in columns %}
             <option value="{{ col }}">{{ col }}</option>
@@ -27,7 +27,7 @@
         </select>
       </div>
       <div class="col-md-4 d-flex align-items-end justify-content-end">
-        <button class="btn btn-primary w-100" type="submit">Analyze & Clean</button>
+        <button class="btn btn-primary w-100" type="submit">Analyser et nettoyer</button>
       </div>
     </div>
   </form>
@@ -35,13 +35,13 @@
 
 {% if summary_html %}
   <div class="d-flex flex-wrap gap-2 mb-3">
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Export cleaned CSV</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Export cleaned Excel</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Export cleaned TXT</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Export cleaned PDF</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Exporter CSV nettoyé</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Exporter Excel nettoyé</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Exporter TXT nettoyé</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Exporter PDF nettoyé</a>
   </div>
   <div class="card card-body shadow-sm">
-    <h5 class="mb-3">Duplicate summary (with repetition counts)</h5>
+    <h5 class="mb-3">Résumé des doublons (avec nombres de répétitions)</h5>
     <div class="table-responsive">{{ summary_html | safe }}</div>
   </div>
 {% endif %}

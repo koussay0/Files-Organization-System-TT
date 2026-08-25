@@ -2,29 +2,29 @@
 {% block content %}
 <div class="page-header mb-4">
   <div>
-    <h2>Transform Columns</h2>
-    <p class="text-muted">Run injections, removals, math operations, and column rearrangements on your dataset.</p>
+    <h2>Transformer les colonnes</h2>
+    <p class="text-muted">Effectuez des injections, suppressions, opérations mathématiques et réorganisations de colonnes sur votre jeu de données.</p>
   </div>
-  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Back</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Retour</a>
 </div>
 
 <div class="card card-body shadow-sm mb-4">
   <form method="post">
     <div class="row g-3">
       <div class="col-md-4">
-        <label class="form-label">Operation</label>
+        <label class="form-label">Opération</label>
         <select class="form-select" name="operation">
-          <option value="inject">Inject text into column</option>
-          <option value="remove_string">Remove text from column</option>
-          <option value="math">Apply math to column</option>
-          <option value="reorder">Reorder columns</option>
-          <option value="add_column">Add new column</option>
-          <option value="remove_column">Remove column by position</option>
-          <option value="extract_columns">Extract columns by positions</option>
+          <option value="inject">Injecter du texte dans la colonne</option>
+          <option value="remove_string">Supprimer du texte de la colonne</option>
+          <option value="math">Appliquer une opération mathématique</option>
+          <option value="reorder">Réorganiser les colonnes</option>
+          <option value="add_column">Ajouter une nouvelle colonne</option>
+          <option value="remove_column">Supprimer une colonne par position</option>
+          <option value="extract_columns">Extraire des colonnes par positions</option>
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Column</label>
+        <label class="form-label">Colonne</label>
         <select class="form-select" name="column">
           {% for col in columns %}
             <option value="{{ col }}">{{ col }}</option>
@@ -32,18 +32,18 @@
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Text / value</label>
-        <input class="form-control" type="text" name="text" placeholder="Text to inject or remove">
+        <label class="form-label">Texte / valeur</label>
+        <input class="form-control" type="text" name="text" placeholder="Texte à injecter ou supprimer">
       </div>
       <div class="col-md-4">
-        <label class="form-label">Position for injection</label>
+        <label class="form-label">Position pour l'injection</label>
         <select class="form-select" name="position">
-          <option value="append">Append</option>
-          <option value="prepend">Prepend</option>
+          <option value="append">Ajouter à la fin</option>
+          <option value="prepend">Ajouter au début</option>
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Math operator</label>
+        <label class="form-label">Opérateur mathématique</label>
         <select class="form-select" name="operator">
           <option value="+">+</option>
           <option value="-">-</option>
@@ -52,49 +52,49 @@
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Operand</label>
+        <label class="form-label">Opérande</label>
         <input class="form-control" type="number" step="any" name="operand" value="0">
       </div>
       <div class="col-md-4">
-        <label class="form-label">New column name</label>
-        <input class="form-control" type="text" name="new_name" placeholder="New_Column">
+        <label class="form-label">Nom de la nouvelle colonne</label>
+        <input class="form-control" type="text" name="new_name" placeholder="Nouvelle_Colonne">
       </div>
       <div class="col-md-4">
-        <label class="form-label">New column value</label>
-        <input class="form-control" type="text" name="new_value" placeholder="Single value for the new column">
+        <label class="form-label">Valeur de la nouvelle colonne</label>
+        <input class="form-control" type="text" name="new_value" placeholder="Une valeur unique pour la nouvelle colonne">
       </div>
       <div class="col-md-4">
-        <label class="form-label">New column position</label>
+        <label class="form-label">Position de la nouvelle colonne</label>
         <input class="form-control" type="number" name="new_position" min="0" value="0">
       </div>
       <div class="col-md-4">
-        <label class="form-label">Remove column position</label>
+        <label class="form-label">Position de la colonne à supprimer</label>
         <input class="form-control" type="number" name="remove_position" min="0" value="0">
       </div>
       <div class="col-md-4">
-        <label class="form-label">New order (comma-separated)</label>
+        <label class="form-label">Nouvel ordre (séparé par des virgules)</label>
         <input class="form-control" type="text" name="order_text" placeholder="C1,C3,C4,C2">
       </div>
       <div class="col-md-4">
-        <label class="form-label">Positions to extract</label>
+        <label class="form-label">Positions à extraire</label>
         <input class="form-control" type="text" name="positions_text" placeholder="0,2,3">
       </div>
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" type="submit">Apply Transformation</button>
+      <button class="btn btn-primary" type="submit">Appliquer la transformation</button>
     </div>
   </form>
 </div>
 
 {% if result_html %}
   <div class="d-flex flex-wrap gap-2 mb-3">
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Export CSV</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Export Excel</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Export TXT</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Export PDF</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Exporter CSV</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Exporter Excel</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Exporter TXT</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Exporter PDF</a>
   </div>
   <div class="card card-body shadow-sm">
-    <h5 class="mb-3">Transformation result (first 50 rows)</h5>
+    <h5 class="mb-3">Résultat de la transformation (50 premières lignes)</h5>
     <div class="table-responsive">{{ result_html | safe }}</div>
   </div>
 {% endif %}

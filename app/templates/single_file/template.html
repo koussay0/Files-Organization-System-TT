@@ -2,17 +2,17 @@
 {% block content %}
 <div class="page-header mb-4">
   <div>
-    <h2>Apply Template</h2>
-    <p class="text-muted">Create a new output column by applying a text template to each source value.</p>
+    <h2>Appliquer un modèle</h2>
+    <p class="text-muted">Créez une nouvelle colonne de sortie en appliquant un modèle de texte à chaque valeur source.</p>
   </div>
-  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Back</a>
+  <a class="btn btn-outline-secondary" href="{{ url_for('single_file.home') }}">Retour</a>
 </div>
 
 <div class="card card-body shadow-sm mb-4">
   <form method="post">
     <div class="row g-3">
       <div class="col-md-4">
-        <label class="form-label">Source column</label>
+        <label class="form-label">Colonne source</label>
         <select class="form-select" name="source_column">
           {% for col in columns %}
             <option value="{{ col }}">{{ col }}</option>
@@ -20,30 +20,30 @@
         </select>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Template text</label>
+        <label class="form-label">Texte du modèle</label>
         <input class="form-control" type="text" name="template_text" placeholder="Param1|Param2|__SOURCE__|Param3" value="Param1|Param2|__SOURCE__|Param3" required>
-        <div class="form-text">Use __SOURCE__ as the placeholder for the selected column value.</div>
+        <div class="form-text">Utilisez __SOURCE__ comme espace réservé pour la valeur de la colonne sélectionnée.</div>
       </div>
       <div class="col-md-4">
-        <label class="form-label">Separator</label>
+        <label class="form-label">Séparateur</label>
         <input class="form-control" type="text" name="separator" value="|">
       </div>
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" type="submit">Generate Template Output</button>
+      <button class="btn btn-primary" type="submit">Générer le résultat du modèle</button>
     </div>
   </form>
 </div>
 
 {% if result_html %}
   <div class="d-flex flex-wrap gap-2 mb-3">
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Export CSV</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Export Excel</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Export TXT</a>
-    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Export PDF</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='csv') }}">Exporter CSV</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='xlsx') }}">Exporter Excel</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='txt') }}">Exporter TXT</a>
+    <a class="btn btn-sm btn-success" href="{{ url_for('single_file.export_last_result', fmt='pdf') }}">Exporter PDF</a>
   </div>
   <div class="card card-body shadow-sm">
-    <h5 class="mb-3">Result (first 50 rows)</h5>
+    <h5 class="mb-3">Résultat (50 premières lignes)</h5>
     <div class="table-responsive">{{ result_html | safe }}</div>
   </div>
 {% endif %}
