@@ -114,13 +114,18 @@ def create_app():
     async def root_route():
         return RedirectResponse(url="/single-file/")
 
-    @fastapi_app.get("/single-file/")
-    async def single_file_route():
-        return RedirectResponse(url="/single-file/")
+    @fastapi_app.options("/single-file/")
+    async def single_file_options():
+        return {"status": "ok"}
 
-    @fastapi_app.get("/two-files/")
-    async def two_files_route():
-        return RedirectResponse(url="/two-files/")
+    @fastapi_app.options("/two-files/")
+    async def two_files_options():
+        return {"status": "ok"}
 
+    fastapi_app.mount("/single-file/", WSGIMiddleware(app))
+    fastapi_app.mount("/two-files/", WSGIMiddleware(app))
     fastapi_app.mount("/", WSGIMiddleware(app))
     return fastapi_app
+
+
+app = create_app()
