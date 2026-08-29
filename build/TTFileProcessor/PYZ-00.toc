@@ -761,8 +761,160 @@
   ('_threading_local',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\_threading_local.py',
    'PYMODULE'),
+  ('annotated_doc',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\annotated_doc\\__init__.py',
+   'PYMODULE'),
+  ('annotated_doc.main',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\annotated_doc\\main.py',
+   'PYMODULE'),
+  ('annotated_types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\annotated_types\\__init__.py',
+   'PYMODULE'),
   ('annotationlib',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\annotationlib.py',
+   'PYMODULE'),
+  ('anyio',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\__init__.py',
+   'PYMODULE'),
+  ('anyio._backends',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('anyio._backends._asyncio',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py',
+   'PYMODULE'),
+  ('anyio._backends._trio',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_backends\\_trio.py',
+   'PYMODULE'),
+  ('anyio._core',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\__init__.py',
+   'PYMODULE'),
+  ('anyio._core._asyncio_selector_thread',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_asyncio_selector_thread.py',
+   'PYMODULE'),
+  ('anyio._core._contextmanagers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_contextmanagers.py',
+   'PYMODULE'),
+  ('anyio._core._eventloop',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio._core._exceptions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('anyio._core._fileio',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_fileio.py',
+   'PYMODULE'),
+  ('anyio._core._resources',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_resources.py',
+   'PYMODULE'),
+  ('anyio._core._signals',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_signals.py',
+   'PYMODULE'),
+  ('anyio._core._sockets',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_sockets.py',
+   'PYMODULE'),
+  ('anyio._core._streams',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_streams.py',
+   'PYMODULE'),
+  ('anyio._core._subprocesses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio._core._synchronization',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_synchronization.py',
+   'PYMODULE'),
+  ('anyio._core._tasks',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_tasks.py',
+   'PYMODULE'),
+  ('anyio._core._tempfile',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_tempfile.py',
+   'PYMODULE'),
+  ('anyio._core._testing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_testing.py',
+   'PYMODULE'),
+  ('anyio._core._typedattr',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\_core\\_typedattr.py',
+   'PYMODULE'),
+  ('anyio.abc',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\__init__.py',
+   'PYMODULE'),
+  ('anyio.abc._eventloop',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio.abc._resources',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_resources.py',
+   'PYMODULE'),
+  ('anyio.abc._sockets',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_sockets.py',
+   'PYMODULE'),
+  ('anyio.abc._streams',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_streams.py',
+   'PYMODULE'),
+  ('anyio.abc._subprocesses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio.abc._tasks',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_tasks.py',
+   'PYMODULE'),
+  ('anyio.abc._testing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\abc\\_testing.py',
+   'PYMODULE'),
+  ('anyio.from_thread',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\from_thread.py',
+   'PYMODULE'),
+  ('anyio.lowlevel',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\lowlevel.py',
+   'PYMODULE'),
+  ('anyio.streams',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\streams\\__init__.py',
+   'PYMODULE'),
+  ('anyio.streams.memory',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\streams\\memory.py',
+   'PYMODULE'),
+  ('anyio.streams.stapled',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\streams\\stapled.py',
+   'PYMODULE'),
+  ('anyio.streams.tls',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\streams\\tls.py',
+   'PYMODULE'),
+  ('anyio.to_thread',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\anyio\\to_thread.py',
    'PYMODULE'),
   ('app',
    'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
@@ -1707,6 +1859,162 @@
    'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
    '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\et_xmlfile\\xmlfile.py',
    'PYMODULE'),
+  ('fastapi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\__init__.py',
+   'PYMODULE'),
+  ('fastapi._compat',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\_compat\\__init__.py',
+   'PYMODULE'),
+  ('fastapi._compat.shared',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\_compat\\shared.py',
+   'PYMODULE'),
+  ('fastapi._compat.v2',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\_compat\\v2.py',
+   'PYMODULE'),
+  ('fastapi.applications',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\applications.py',
+   'PYMODULE'),
+  ('fastapi.background',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\background.py',
+   'PYMODULE'),
+  ('fastapi.concurrency',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\concurrency.py',
+   'PYMODULE'),
+  ('fastapi.datastructures',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\datastructures.py',
+   'PYMODULE'),
+  ('fastapi.dependencies',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\dependencies\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.dependencies.models',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\dependencies\\models.py',
+   'PYMODULE'),
+  ('fastapi.dependencies.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\dependencies\\utils.py',
+   'PYMODULE'),
+  ('fastapi.encoders',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\encoders.py',
+   'PYMODULE'),
+  ('fastapi.exception_handlers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\exception_handlers.py',
+   'PYMODULE'),
+  ('fastapi.exceptions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\exceptions.py',
+   'PYMODULE'),
+  ('fastapi.logger',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\logger.py',
+   'PYMODULE'),
+  ('fastapi.middleware',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.middleware.asyncexitstack',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\middleware\\asyncexitstack.py',
+   'PYMODULE'),
+  ('fastapi.middleware.wsgi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('fastapi.openapi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\openapi\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.openapi.constants',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\openapi\\constants.py',
+   'PYMODULE'),
+  ('fastapi.openapi.docs',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\openapi\\docs.py',
+   'PYMODULE'),
+  ('fastapi.openapi.models',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\openapi\\models.py',
+   'PYMODULE'),
+  ('fastapi.openapi.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\openapi\\utils.py',
+   'PYMODULE'),
+  ('fastapi.param_functions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\param_functions.py',
+   'PYMODULE'),
+  ('fastapi.params',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\params.py',
+   'PYMODULE'),
+  ('fastapi.requests',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\requests.py',
+   'PYMODULE'),
+  ('fastapi.responses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\responses.py',
+   'PYMODULE'),
+  ('fastapi.routing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\routing.py',
+   'PYMODULE'),
+  ('fastapi.security',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.security.api_key',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\api_key.py',
+   'PYMODULE'),
+  ('fastapi.security.base',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\base.py',
+   'PYMODULE'),
+  ('fastapi.security.http',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\http.py',
+   'PYMODULE'),
+  ('fastapi.security.oauth2',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\oauth2.py',
+   'PYMODULE'),
+  ('fastapi.security.open_id_connect_url',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\open_id_connect_url.py',
+   'PYMODULE'),
+  ('fastapi.security.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\security\\utils.py',
+   'PYMODULE'),
+  ('fastapi.sse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\sse.py',
+   'PYMODULE'),
+  ('fastapi.types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\types.py',
+   'PYMODULE'),
+  ('fastapi.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\utils.py',
+   'PYMODULE'),
+  ('fastapi.websockets',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\fastapi\\websockets.py',
+   'PYMODULE'),
   ('fileinput',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\fileinput.py',
    'PYMODULE'),
@@ -1823,6 +2131,50 @@
   ('gzip',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\gzip.py',
    'PYMODULE'),
+  ('h11',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\__init__.py',
+   'PYMODULE'),
+  ('h11._abnf',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_abnf.py',
+   'PYMODULE'),
+  ('h11._connection',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_connection.py',
+   'PYMODULE'),
+  ('h11._events',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_events.py',
+   'PYMODULE'),
+  ('h11._headers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_headers.py',
+   'PYMODULE'),
+  ('h11._readers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_readers.py',
+   'PYMODULE'),
+  ('h11._receivebuffer',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_receivebuffer.py',
+   'PYMODULE'),
+  ('h11._state',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_state.py',
+   'PYMODULE'),
+  ('h11._util',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_util.py',
+   'PYMODULE'),
+  ('h11._version',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_version.py',
+   'PYMODULE'),
+  ('h11._writers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\h11\\_writers.py',
+   'PYMODULE'),
   ('hashlib',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\hashlib.py',
    'PYMODULE'),
@@ -1852,6 +2204,30 @@
    'PYMODULE'),
   ('http.server',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
   ('importlib',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py',
@@ -2075,6 +2451,12 @@
    'PYMODULE'),
   ('logging',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('logging.config',
+   'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\logging\\config.py',
+   'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\logging\\handlers.py',
    'PYMODULE'),
   ('lzma',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\lzma.py',
@@ -4610,6 +4992,9 @@
   ('pathlib._os',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\pathlib\\_os.py',
    'PYMODULE'),
+  ('pathlib.types',
+   'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\pathlib\\types.py',
+   'PYMODULE'),
   ('pdb',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\pdb.py',
    'PYMODULE'),
@@ -4870,6 +5255,434 @@
   ('pycparser.c_parser',
    'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
    '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pycparser\\c_parser.py',
+   'PYMODULE'),
+  ('pydantic',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal._config',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_config.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_metadata',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_core_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_core_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._dataclasses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_dataclasses.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators_v1',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators_v1.py',
+   'PYMODULE'),
+  ('pydantic._internal._discriminated_union',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_discriminated_union.py',
+   'PYMODULE'),
+  ('pydantic._internal._docs_extraction',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_docs_extraction.py',
+   'PYMODULE'),
+  ('pydantic._internal._fields',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_fields.py',
+   'PYMODULE'),
+  ('pydantic._internal._forward_ref',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_forward_ref.py',
+   'PYMODULE'),
+  ('pydantic._internal._generate_schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py',
+   'PYMODULE'),
+  ('pydantic._internal._generics',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_generics.py',
+   'PYMODULE'),
+  ('pydantic._internal._git',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_git.py',
+   'PYMODULE'),
+  ('pydantic._internal._import_utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_import_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._internal_dataclass',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py',
+   'PYMODULE'),
+  ('pydantic._internal._known_annotated_metadata',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_known_annotated_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._mock_val_ser',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_mock_val_ser.py',
+   'PYMODULE'),
+  ('pydantic._internal._model_construction',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py',
+   'PYMODULE'),
+  ('pydantic._internal._namespace_utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_namespace_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._repr',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_repr.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_gather',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_gather.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_generation_shared',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_generation_shared.py',
+   'PYMODULE'),
+  ('pydantic._internal._serializers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_serializers.py',
+   'PYMODULE'),
+  ('pydantic._internal._signature',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_signature.py',
+   'PYMODULE'),
+  ('pydantic._internal._typing_extra',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_typing_extra.py',
+   'PYMODULE'),
+  ('pydantic._internal._utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._validate_call',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_validate_call.py',
+   'PYMODULE'),
+  ('pydantic._internal._validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_internal\\_validators.py',
+   'PYMODULE'),
+  ('pydantic._migration',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\_migration.py',
+   'PYMODULE'),
+  ('pydantic.alias_generators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\alias_generators.py',
+   'PYMODULE'),
+  ('pydantic.aliases',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\aliases.py',
+   'PYMODULE'),
+  ('pydantic.annotated_handlers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\annotated_handlers.py',
+   'PYMODULE'),
+  ('pydantic.class_validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.color',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\color.py',
+   'PYMODULE'),
+  ('pydantic.config',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\config.py',
+   'PYMODULE'),
+  ('pydantic.dataclasses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.datetime_parse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.decorator',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.deprecated',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.class_validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.config',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\config.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.copy_internals',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\copy_internals.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.decorator',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.json',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\json.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.parse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\parse.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.tools',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\tools.py',
+   'PYMODULE'),
+  ('pydantic.env_settings',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.error_wrappers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.errors',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\errors.py',
+   'PYMODULE'),
+  ('pydantic.experimental',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\experimental\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.experimental.arguments_schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\experimental\\arguments_schema.py',
+   'PYMODULE'),
+  ('pydantic.experimental.missing_sentinel',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\experimental\\missing_sentinel.py',
+   'PYMODULE'),
+  ('pydantic.experimental.pipeline',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\experimental\\pipeline.py',
+   'PYMODULE'),
+  ('pydantic.fields',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\fields.py',
+   'PYMODULE'),
+  ('pydantic.functional_serializers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\functional_serializers.py',
+   'PYMODULE'),
+  ('pydantic.functional_validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\functional_validators.py',
+   'PYMODULE'),
+  ('pydantic.generics',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\generics.py',
+   'PYMODULE'),
+  ('pydantic.json',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\json.py',
+   'PYMODULE'),
+  ('pydantic.json_schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\json_schema.py',
+   'PYMODULE'),
+  ('pydantic.main',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\main.py',
+   'PYMODULE'),
+  ('pydantic.mypy',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\mypy.py',
+   'PYMODULE'),
+  ('pydantic.networks',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\networks.py',
+   'PYMODULE'),
+  ('pydantic.parse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\parse.py',
+   'PYMODULE'),
+  ('pydantic.plugin',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\plugin\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.plugin._loader',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\plugin\\_loader.py',
+   'PYMODULE'),
+  ('pydantic.plugin._schema_validator',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\plugin\\_schema_validator.py',
+   'PYMODULE'),
+  ('pydantic.root_model',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\root_model.py',
+   'PYMODULE'),
+  ('pydantic.schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\schema.py',
+   'PYMODULE'),
+  ('pydantic.tools',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\tools.py',
+   'PYMODULE'),
+  ('pydantic.type_adapter',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\type_adapter.py',
+   'PYMODULE'),
+  ('pydantic.types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\types.py',
+   'PYMODULE'),
+  ('pydantic.typing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\typing.py',
+   'PYMODULE'),
+  ('pydantic.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\utils.py',
+   'PYMODULE'),
+  ('pydantic.v1',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.v1._hypothesis_plugin',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\_hypothesis_plugin.py',
+   'PYMODULE'),
+  ('pydantic.v1.annotated_types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\annotated_types.py',
+   'PYMODULE'),
+  ('pydantic.v1.class_validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.color',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\color.py',
+   'PYMODULE'),
+  ('pydantic.v1.config',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\config.py',
+   'PYMODULE'),
+  ('pydantic.v1.dataclasses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.v1.datetime_parse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.decorator',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.v1.env_settings',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.v1.error_wrappers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.v1.errors',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\errors.py',
+   'PYMODULE'),
+  ('pydantic.v1.fields',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\fields.py',
+   'PYMODULE'),
+  ('pydantic.v1.generics',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\generics.py',
+   'PYMODULE'),
+  ('pydantic.v1.json',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\json.py',
+   'PYMODULE'),
+  ('pydantic.v1.main',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\main.py',
+   'PYMODULE'),
+  ('pydantic.v1.mypy',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\mypy.py',
+   'PYMODULE'),
+  ('pydantic.v1.networks',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\networks.py',
+   'PYMODULE'),
+  ('pydantic.v1.parse',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\schema.py',
+   'PYMODULE'),
+  ('pydantic.v1.tools',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\tools.py',
+   'PYMODULE'),
+  ('pydantic.v1.types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\types.py',
+   'PYMODULE'),
+  ('pydantic.v1.typing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\typing.py',
+   'PYMODULE'),
+  ('pydantic.v1.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\utils.py',
+   'PYMODULE'),
+  ('pydantic.v1.validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.version',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\v1\\version.py',
+   'PYMODULE'),
+  ('pydantic.validate_call_decorator',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\validate_call_decorator.py',
+   'PYMODULE'),
+  ('pydantic.validators',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\validators.py',
+   'PYMODULE'),
+  ('pydantic.version',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\version.py',
+   'PYMODULE'),
+  ('pydantic.warnings',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic\\warnings.py',
+   'PYMODULE'),
+  ('pydantic_core',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic_core\\__init__.py',
+   'PYMODULE'),
+  ('pydantic_core.core_schema',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\pydantic_core\\core_schema.py',
    'PYMODULE'),
   ('pydoc',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\pydoc.py',
@@ -7325,6 +8138,9 @@
    'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
    '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\six.py',
    'PYMODULE'),
+  ('smtplib',
+   'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\smtplib.py',
+   'PYMODULE'),
   ('socket',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\socket.py',
    'PYMODULE'),
@@ -7345,6 +8161,102 @@
    'PYMODULE'),
   ('ssl',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('starlette',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\__init__.py',
+   'PYMODULE'),
+  ('starlette._exception_handler',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\_exception_handler.py',
+   'PYMODULE'),
+  ('starlette._utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\_utils.py',
+   'PYMODULE'),
+  ('starlette.applications',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\applications.py',
+   'PYMODULE'),
+  ('starlette.background',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\background.py',
+   'PYMODULE'),
+  ('starlette.concurrency',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\concurrency.py',
+   'PYMODULE'),
+  ('starlette.convertors',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\convertors.py',
+   'PYMODULE'),
+  ('starlette.datastructures',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\datastructures.py',
+   'PYMODULE'),
+  ('starlette.exceptions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\exceptions.py',
+   'PYMODULE'),
+  ('starlette.formparsers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\formparsers.py',
+   'PYMODULE'),
+  ('starlette.middleware',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('starlette.middleware.base',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\base.py',
+   'PYMODULE'),
+  ('starlette.middleware.body_limit',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\body_limit.py',
+   'PYMODULE'),
+  ('starlette.middleware.errors',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\errors.py',
+   'PYMODULE'),
+  ('starlette.middleware.exceptions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\exceptions.py',
+   'PYMODULE'),
+  ('starlette.middleware.sessions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\sessions.py',
+   'PYMODULE'),
+  ('starlette.middleware.wsgi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('starlette.requests',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\requests.py',
+   'PYMODULE'),
+  ('starlette.responses',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\responses.py',
+   'PYMODULE'),
+  ('starlette.routing',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\routing.py',
+   'PYMODULE'),
+  ('starlette.staticfiles',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\staticfiles.py',
+   'PYMODULE'),
+  ('starlette.status',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\status.py',
+   'PYMODULE'),
+  ('starlette.types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\types.py',
+   'PYMODULE'),
+  ('starlette.websockets',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\starlette\\websockets.py',
    'PYMODULE'),
   ('statistics',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\statistics.py',
@@ -7399,6 +8311,22 @@
    'PYMODULE'),
   ('typing',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('typing_inspection',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\typing_inspection\\__init__.py',
+   'PYMODULE'),
+  ('typing_inspection.introspection',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\typing_inspection\\introspection.py',
+   'PYMODULE'),
+  ('typing_inspection.typing_objects',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\typing_inspection\\typing_objects.py',
    'PYMODULE'),
   ('tzdata',
    'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
@@ -7538,6 +8466,174 @@
    'PYMODULE'),
   ('uuid',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\uuid.py',
+   'PYMODULE'),
+  ('uvicorn',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.__main__',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\__main__.py',
+   'PYMODULE'),
+  ('uvicorn._ansi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\_ansi.py',
+   'PYMODULE'),
+  ('uvicorn._compat',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\_compat.py',
+   'PYMODULE'),
+  ('uvicorn._subprocess',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\_subprocess.py',
+   'PYMODULE'),
+  ('uvicorn._types',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\_types.py',
+   'PYMODULE'),
+  ('uvicorn.config',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\config.py',
+   'PYMODULE'),
+  ('uvicorn.importer',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\importer.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\lifespan\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan.off',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\lifespan\\off.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan.on',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\lifespan\\on.py',
+   'PYMODULE'),
+  ('uvicorn.logging',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\logging.py',
+   'PYMODULE'),
+  ('uvicorn.loops',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\loops\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.loops.asyncio',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\loops\\asyncio.py',
+   'PYMODULE'),
+  ('uvicorn.loops.auto',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\loops\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.loops.uvloop',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\loops\\uvloop.py',
+   'PYMODULE'),
+  ('uvicorn.main',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\main.py',
+   'PYMODULE'),
+  ('uvicorn.middleware',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.asgi2',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\middleware\\asgi2.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.message_logger',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\middleware\\message_logger.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.proxy_headers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\middleware\\proxy_headers.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.wsgi',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('uvicorn.protocols',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.auto',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.flow_control',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\flow_control.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.h11_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\h11_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.httptools_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\httptools_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.zttp_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\zttp_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.utils',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\utils.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.auto',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.websockets_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.websockets_sansio_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_sansio_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.wsproto_impl',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\wsproto_impl.py',
+   'PYMODULE'),
+  ('uvicorn.server',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\server.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\supervisors\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.basereload',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\supervisors\\basereload.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.multiprocess',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\supervisors\\multiprocess.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.statreload',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\supervisors\\statreload.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.watchfilesreload',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\supervisors\\watchfilesreload.py',
+   'PYMODULE'),
+  ('uvicorn.workers',
+   'C:\\Users\\LOQ\\Downloads\\tt_file_processor '
+   '(1)\\tt_file_processor\\.venv\\Lib\\site-packages\\uvicorn\\workers.py',
    'PYMODULE'),
   ('webbrowser',
    'C:\\Users\\LOQ\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\webbrowser.py',

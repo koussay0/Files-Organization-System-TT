@@ -1,8 +1,5 @@
 import os
 from flask import Flask, redirect, request, session, url_for, get_flashed_messages
-from fastapi import FastAPI
-from fastapi.responses import RedirectResponse
-from fastapi.middleware.wsgi import WSGIMiddleware
 
 
 def create_app():
@@ -108,24 +105,7 @@ def create_app():
     app.register_blueprint(single_file_bp, url_prefix="/single-file")
     app.register_blueprint(multi_file_bp, url_prefix="/two-files")
 
-    fastapi_app = FastAPI(title="TT File Processor")
-
-    @fastapi_app.get("/")
-    async def root_route():
-        return RedirectResponse(url="/single-file/")
-
-    @fastapi_app.options("/single-file/")
-    async def single_file_options():
-        return {"status": "ok"}
-
-    @fastapi_app.options("/two-files/")
-    async def two_files_options():
-        return {"status": "ok"}
-
-    fastapi_app.mount("/single-file/", WSGIMiddleware(app))
-    fastapi_app.mount("/two-files/", WSGIMiddleware(app))
-    fastapi_app.mount("/", WSGIMiddleware(app))
-    return fastapi_app
+    return app
 
 
 app = create_app()
