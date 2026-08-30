@@ -24,4 +24,3 @@ if __name__ == "__main__":
     webview.create_window("TT File Processor", "http://127.0.0.1:5000")
     webview.start()
 
-    

@@ -10,6 +10,11 @@ def create_app():
         UPLOAD_FOLDER=os.path.join(app.instance_path, "uploads"),
         OUTPUT_FOLDER=os.path.join(app.instance_path, "outputs"),
         MAX_CONTENT_LENGTH=None,
+        ALLOWED_USERS={
+            "admin": "admin123",
+            # Replace these values with your real app credentials.
+            # Example: "username": "password"
+        },
     )
 
     translations = {
@@ -73,6 +78,14 @@ def create_app():
         if lang not in translations:
             lang = "en"
         session["lang"] = lang
+
+    @app.before_request
+    def require_login():
+        open_routes = {"main.login", "static", "main.set_language"}
+        if request.endpoint in open_routes:
+            return None
+        if not session.get("authenticated"):
+            return redirect(url_for("main.login"))
 
     @app.context_processor
     def inject_language():
