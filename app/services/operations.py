@@ -178,6 +178,31 @@ def extract_columns(df: pd.DataFrame, positions: list) -> pd.DataFrame:
     return df[cols]
 
 
+def _normalize_column_list(columns, fallback_columns, *, allow_empty=False, field_name="column"):
+    """Trim whitespace and discard empty entries while keeping a safe fallback."""
+    if columns is None:
+        return list(fallback_columns)
+
+    normalized = []
+    for col in columns:
+        if col is None:
+            continue
+        text = str(col).strip()
+        if text:
+            normalized.append(text)
+
+    if not normalized:
+        if allow_empty:
+            return list(fallback_columns)
+        raise ValueError(f"At least one valid {field_name} name is required.")
+
+    missing = [col for col in normalized if col not in fallback_columns]
+    if missing:
+        raise ValueError(f"Unknown {field_name}(s): {', '.join(missing)}")
+
+    return normalized
+
+
 # ---------------------------------------------------------------------------
 # Epic 10 - Two-file comparison
 # ---------------------------------------------------------------------------
@@ -189,7 +214,10 @@ def compare_files(df1: pd.DataFrame, df2: pd.DataFrame, subset=None):
       - only_in_f2:   rows only in file 2
     subset=None means "compare on full row".
     """
-    cols = subset if subset else list(df1.columns)
+    if subset is None:
+        cols = list(df1.columns)
+    else:
+        cols = _normalize_column_list(subset, list(df1.columns), field_name="comparison column")
 
     merged = df1[cols].merge(df2[cols], how="outer", indicator=True, on=cols)
 
@@ -205,6 +233,9 @@ def compare_files(df1: pd.DataFrame, df2: pd.DataFrame, subset=None):
 # ---------------------------------------------------------------------------
 def merge_files(df1: pd.DataFrame, df2: pd.DataFrame, columns_f1: list, columns_f2: list) -> pd.DataFrame:
     """Simple side-by-side column merge (not a SQL-style join on keys)."""
-    part1 = df1[columns_f1].reset_index(drop=True)
-    part2 = df2[columns_f2].reset_index(drop=True)
+    part1_cols = _normalize_column_list(columns_f1, list(df1.columns), allow_empty=True, field_name="column")
+    part2_cols = _normalize_column_list(columns_f2, list(df2.columns), allow_empty=True, field_name="column")
+
+    part1 = df1[part1_cols].reset_index(drop=True)
+    part2 = df2[part2_cols].reset_index(drop=True)
     return pd.concat([part1, part2], axis=1)

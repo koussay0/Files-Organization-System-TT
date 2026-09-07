@@ -149,5 +149,3 @@ The generated executable is placed in `dist/`.
 Runtime and test dependencies are listed in `requirements.txt`. The main
 components are Flask, FastAPI, uvicorn, pandas, openpyxl, xlrd, pdfplumber,
 ReportLab, pywebview, and PyInstaller.
-
-

@@ -16,12 +16,22 @@
         <p class="app-subtitle mb-0">{{ translations.tagline }}</p>
       </div>
       <div class="d-flex align-items-center gap-3 flex-wrap justify-content-end">
-        <nav class="nav nav-pills nav-fill app-nav">
-          <a class="nav-link" href="{{ url_for('main.index') }}">{{ translations.home }}</a>
-          <a class="nav-link" href="{{ url_for('single_file.home') }}">{{ translations.single_file }}</a>
-          <a class="nav-link" href="{{ url_for('multi_file.home') }}">{{ translations.compare_files }}</a>
-          <a class="nav-link" href="{{ url_for('multi_file.merge') }}">{{ translations.merge_files }}</a>
-        </nav>
+        {% if session.get('authenticated') %}
+          <nav class="nav nav-pills nav-fill app-nav">
+            <a class="nav-link" href="{{ url_for('main.index') }}">{{ translations.home }}</a>
+            <a class="nav-link" href="{{ url_for('single_file.home') }}">{{ translations.single_file }}</a>
+            <a class="nav-link" href="{{ url_for('multi_file.home') }}">{{ translations.compare_files }}</a>
+            <a class="nav-link" href="{{ url_for('multi_file.merge') }}">{{ translations.merge_files }}</a>
+          </nav>
+        {% endif %}
+
+        {% if session.get('authenticated') %}
+          <div class="user-chip">
+            <span class="user-name">{{ session.get('username', 'User') }}</span>
+            <a class="btn btn-sm btn-light logout-btn" href="{{ url_for('main.logout') }}">Déconnexion</a>
+          </div>
+        {% endif %}
+
         <div class="lang-picker">
           <span class="lang-label">{{ translations.language }}</span>
           <div class="btn-group btn-group-sm" role="group" aria-label="Language selector">

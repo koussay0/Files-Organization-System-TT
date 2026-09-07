@@ -29,8 +29,19 @@ def home():
         df1 = load_dataframe(file1)
         df2 = load_dataframe(file2)
 
-        subset = [request.form.get("column")] if mode == "column" else None
-        comparison = ops.compare_files(df1, df2, subset=subset)
+        subset = None
+        if mode == "column":
+            raw_column = request.form.get("column", "")
+            subset = [raw_column] if raw_column.strip() else None
+            if subset is None:
+                flash("Veuillez spécifier une colonne valide pour la comparaison.", "warning")
+                return redirect(url_for("multi_file.home"))
+
+        try:
+            comparison = ops.compare_files(df1, df2, subset=subset)
+        except ValueError as exc:
+            flash(str(exc), "warning")
+            return redirect(url_for("multi_file.home"))
 
         for key, df in comparison.items():
             stored_name = f"{uuid.uuid4().hex}.csv"
@@ -90,7 +101,11 @@ def merge():
         if not cols_f2:
             cols_f2 = list(df2.columns)
 
-        merged = ops.merge_files(df1, df2, cols_f1, cols_f2)
+        try:
+            merged = ops.merge_files(df1, df2, cols_f1, cols_f2)
+        except ValueError as exc:
+            flash(str(exc), "warning")
+            return redirect(url_for("multi_file.merge"))
         session["last_result"] = f"{uuid.uuid4().hex}.csv"
         merged.to_csv(os.path.join(current_app.config["OUTPUT_FOLDER"], session["last_result"]), index=False)
 
