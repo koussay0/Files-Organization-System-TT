@@ -1,8 +1,5 @@
 import os
 from flask import Flask, redirect, request, session, url_for, get_flashed_messages
-from fastapi import FastAPI
-from fastapi.responses import RedirectResponse
-from fastapi.middleware.wsgi import WSGIMiddleware
 
 
 def create_app():
@@ -13,6 +10,11 @@ def create_app():
         UPLOAD_FOLDER=os.path.join(app.instance_path, "uploads"),
         OUTPUT_FOLDER=os.path.join(app.instance_path, "outputs"),
         MAX_CONTENT_LENGTH=None,
+        ALLOWED_USERS={
+            "admin": "admintt123",
+            # Replace these values with your real app credentials.
+            # Example: "username": "password"
+        },
     )
 
     translations = {
@@ -77,6 +79,14 @@ def create_app():
             lang = "en"
         session["lang"] = lang
 
+    @app.before_request
+    def require_login():
+        open_routes = {"main.login", "static", "main.set_language"}
+        if request.endpoint in open_routes:
+            return None
+        if not session.get("authenticated"):
+            return redirect(url_for("main.login"))
+
     @app.context_processor
     def inject_language():
         lang = session.get("lang", "en")
@@ -108,19 +118,7 @@ def create_app():
     app.register_blueprint(single_file_bp, url_prefix="/single-file")
     app.register_blueprint(multi_file_bp, url_prefix="/two-files")
 
-    fastapi_app = FastAPI(title="TT File Processor")
+    return app
 
-    @fastapi_app.get("/")
-    async def root_route():
-        return RedirectResponse(url="/single-file/")
 
-    @fastapi_app.get("/single-file/")
-    async def single_file_route():
-        return RedirectResponse(url="/single-file/")
-
-    @fastapi_app.get("/two-files/")
-    async def two_files_route():
-        return RedirectResponse(url="/two-files/")
-
-    fastapi_app.mount("/", WSGIMiddleware(app))
-    return fastapi_app
+app = create_app()

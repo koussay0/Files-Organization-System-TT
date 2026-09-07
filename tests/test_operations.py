@@ -387,6 +387,26 @@ def test_compare_files_all_match():
     assert len(result["only_in_f2"]) == 0
 
 
+def test_compare_files_missing_column_raises_friendly_error():
+    """Empty or unknown compare keys should raise a clear validation error."""
+    df1 = pd.DataFrame({"id": [1, 2], "name": ["a", "b"]})
+    df2 = pd.DataFrame({"id": [2, 3], "name": ["b", "c"]})
+
+    try:
+        ops.compare_files(df1, df2, subset=[""])
+        assert False, "Expected ValueError for blank compare column"
+    except ValueError as exc:
+        assert "column" in str(exc).lower()
+
+
+def test_compare_files_ignores_blank_column_names():
+    """Leading/trailing blanks in column names should be trimmed before comparison."""
+    df1 = pd.DataFrame({"id": [1, 2], "name": ["a", "b"]})
+    df2 = pd.DataFrame({"id": [2, 3], "name": ["b", "c"]})
+    result = ops.compare_files(df1, df2, subset=[" id "])
+    assert result["in_both"]["id"].tolist() == [2]
+
+
 # ============================================================================
 # EPIC 11: FILE MERGING
 # ============================================================================
@@ -415,6 +435,14 @@ def test_merge_files_preserves_data():
     result = ops.merge_files(df1, df2, ["x"], ["y"])
     assert len(result) == 3
     assert result["x"].tolist() == [10, 20, 30]
+
+
+def test_merge_files_ignores_blank_or_missing_columns():
+    """Blank selections should be ignored without crashing or duplicating columns."""
+    df1 = pd.DataFrame({"a": [1, 2], "b": [5, 6]})
+    df2 = pd.DataFrame({"c": [3, 4], "d": [7, 8]})
+    result = ops.merge_files(df1, df2, [" a ", ""], ["", " d "])
+    assert list(result.columns) == ["a", "d"]
 
 
 # ============================================================================

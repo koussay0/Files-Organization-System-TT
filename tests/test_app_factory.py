@@ -1,9 +1,9 @@
 from app import create_app
 
 
-def test_create_app_returns_fastapi_app():
+def test_create_app_returns_flask_app():
     app = create_app()
-    paths = {route.path for route in app.routes}
-    assert "/" in paths
-    assert "/single-file/" in paths
-    assert "/two-files/" in paths
+    rules = {rule.rule for rule in app.url_map.iter_rules()}
+    assert "/" in rules
+    assert "/single-file/" in rules
+    assert "/two-files/" in rules
