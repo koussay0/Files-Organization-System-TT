@@ -1,16 +1,45 @@
-# Tunisie Telecom — File Processing Tool (Web MVP)
+# Tunisie Telecom File Processor
 
-A Flask + pandas web app implementing the file-processing internship brief:
-upload csv/txt/excel files, sort them, find & remove duplicates, compare or
-merge two files, and export results in CSV/TXT/Excel/PDF.
+TT File Processor is a Python application for cleaning, transforming,
+comparing, merging, and exporting structured files. It provides a browser-based
+dashboard and can also run as a Windows desktop application through pywebview.
 
-This is a **working MVP skeleton**, not the full feature set — it covers the
-"Must" priority items from the backlog (Epics 1, 2, 3, 9, 10, 11) so you have
-a running app to build on. The remaining epics (sequence detection, file
-splitting, template-based reformatting, column operations, column
-reorder/add/remove/extract) already have their core logic written in
-`app/services/operations.py` — they just need routes + templates wired up,
-following the same pattern as `sort` and `duplicates`.
+The web interface is served by Flask and exposed through a FastAPI/ASGI
+wrapper. Data processing is performed with pandas, and the application keeps
+uploaded files and generated results in the local `instance/` directory.
+
+## Features
+
+### File input
+
+- CSV, TXT, XLS, XLSX, and PDF files containing tables or delimited text
+- Automatic delimiter detection for comma, semicolon, tab, and pipe-separated text files
+- File preview with row count, column count, and column names
+
+### Single-file processing
+
+- Sort by a selected column or by the complete row
+- Find and remove duplicate rows, using all columns or selected columns
+- Detect consecutive numeric sequences
+- Split files by output-file count or rows per file
+- Download split results as a ZIP archive
+- Apply reusable templates to column values
+- Add text, remove text, or apply arithmetic operations to column values
+- Reorder, add, remove, and extract columns
+
+### Two-file processing
+
+- Compare complete rows or selected columns
+- View matching rows and rows unique to either file
+- Merge selected columns side by side by row position
+- Export comparison and merge results
+
+### Export and interface
+
+- Export results as CSV, TXT, XLSX, or PDF
+- Custom separators for CSV and TXT exports
+- English and French interface options
+- Responsive Flask/Jinja2 dashboard with Bootstrap-based templates
 
 ## Project structure
 
@@ -19,76 +48,106 @@ tt_file_processor/
 ├── app/
 │   ├── __init__.py              # Flask app factory
 │   ├── routes/
-│   │   ├── main.py              # Home page
-│   │   ├── single_file.py       # Epics 1-9 (upload, sort, duplicates, export)
-│   │   └── multi_file.py        # Epics 10-11 (compare, merge)
+│   │   ├── main.py              # Dashboard and language selection
+│   │   ├── single_file.py       # Single-file workflows
+│   │   └── multi_file.py        # Compare and merge workflows
 │   ├── services/
 │   │   ├── file_loader.py       # Unified csv/txt/xls/xlsx loader (Epic 1)
 │   │   ├── operations.py        # All data operations, one function per epic
 │   │   └── exporters.py         # Unified export engine (Epic 9)
-│   ├── templates/               # Jinja2 + Bootstrap 5 templates
+│   ├── templates/               # Jinja2 templates
 │   └── static/css/style.css
 ├── instance/
 │   ├── uploads/                 # Uploaded files land here (gitignored)
 │   └── outputs/                 # Generated result files (gitignored)
 ├── tests/
-│   └── test_operations.py       # Unit tests for core logic (pytest)
+│   └── test_operations.py       # Unit tests for processing logic
 ├── requirements.txt
 ├── run.py                       # Entry point: python run.py
+├── TTFileProcessor.spec         # PyInstaller packaging configuration
 └── README.md
 ```
 
-## Setup
+## Installation
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+python -m venv .venv
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# macOS/Linux
+source .venv/bin/activate
+
 pip install -r requirements.txt
+```
+
+## Run the application
+
+### Desktop mode
+
+Run the following command to start the local server and open the application
+in a native desktop window:
+
+```bash
 python run.py
 ```
 
-Then open http://127.0.0.1:5000
+### Browser mode
+
+The application is available at `http://127.0.0.1:5000`. If the pywebview
+window is unavailable in your environment, start the ASGI app with uvicorn:
+
+```bash
+uvicorn run:app --host 127.0.0.1 --port 5000
+```
+
+Then open `http://127.0.0.1:5000` in a browser.
 
 ## Running tests
 
 ```bash
-pip install pytest
-pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
-## How the pieces fit together
+## Architecture
 
-- **`file_loader.py`** turns any uploaded csv/txt/xls/xlsx into a pandas
-  DataFrame, detecting delimiter for text files automatically.
-- **`operations.py`** is pure logic — no Flask, no HTTP — so every function
-  can be unit-tested directly (see `tests/test_operations.py`). This is where
-  you should add logic for the remaining epics (sequence detection, splitting,
-  templating, column math, column reorder/add/remove/extract).
-- **`exporters.py`** is the single place that knows how to write
-  csv/txt/xlsx/pdf — every route reuses `exporters.export(df, path, fmt)`
-  rather than reimplementing export logic per feature.
-- **Routes** (`single_file.py`, `multi_file.py`) are intentionally thin: load
-  data → call an `operations` function → call `exporters.export` → render/
-  send the result. Session variables track "current file" / "last result" so
-  a user can chain operations without re-uploading.
+- `app/__init__.py` creates the Flask application, configures storage folders,
+  registers routes, and mounts Flask inside FastAPI.
+- `app/services/file_loader.py` converts supported uploads into pandas
+  DataFrames and detects delimiters for text files.
+- `app/services/operations.py` contains the processing logic independently of
+  HTTP, which keeps it straightforward to test.
+- `app/services/exporters.py` centralizes CSV, TXT, XLSX, and PDF output.
+- `app/routes/` handles uploads, workflow pages, session state, and downloads.
+- `run.py` starts uvicorn in a background thread and opens the local URL with
+  pywebview.
 
-## Next steps (matches the backlog)
+## Storage and configuration
 
-1. Wire up routes/templates for: sequence detection (Epic 4), file splitting
-   (Epic 5), template-based reformatting (Epic 6), column string/math ops
-   (Epic 7), column reorder/add/remove/extract (Epic 8) — logic already
-   exists in `operations.py`.
-2. Replace the temp-file session approach with a proper job/result store if
-   you need multi-user concurrency.
-3. Add drag-and-drop column reordering (HTMX + a small JS sortable list) for
-   Epic 8.
-4. Deploy behind gunicorn + nginx on the Tunisie Telecom intranet server
-   (confirm with your supervisor whether one is available).
+Uploaded files are stored in `instance/uploads/` and generated files are stored
+in `instance/outputs/`. These directories are created automatically and are
+ignored by Git. The application currently has no upload-size limit, so the
+available disk space and memory of the machine determine practical file sizes.
 
-   -----------
-   I am able to convert an executable file .exe of the application.
-   08/11/2026
-   File limit size is removed (used to be 1GB) 08/12/2026
-   UI updated and French added 08/14/2026
-   
-   
+For production use, replace the development `SECRET_KEY` in
+`app/__init__.py` with a secret supplied through your deployment configuration.
+
+## Windows executable
+
+The repository includes `TTFileProcessor.spec` for PyInstaller packaging. A
+local build can be created with:
+
+```bash
+pyinstaller TTFileProcessor.spec
+```
+
+The generated executable is placed in `dist/`.
+
+## Dependencies
+
+Runtime and test dependencies are listed in `requirements.txt`. The main
+components are Flask, FastAPI, uvicorn, pandas, openpyxl, xlrd, pdfplumber,
+ReportLab, pywebview, and PyInstaller.
+
+
