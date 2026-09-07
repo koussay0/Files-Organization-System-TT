@@ -11,7 +11,7 @@ def create_app():
         OUTPUT_FOLDER=os.path.join(app.instance_path, "outputs"),
         MAX_CONTENT_LENGTH=None,
         ALLOWED_USERS={
-            "admin": "admin123",
+            "admin": "admintt123",
             # Replace these values with your real app credentials.
             # Example: "username": "password"
         },
