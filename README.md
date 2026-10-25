@@ -72,6 +72,12 @@ pytest tests/ -v
   send the result. Session variables track "current file" / "last result" so
   a user can chain operations without re-uploading.
 
+## Screenshots from the application
+
+
+
+
+
 ## Next steps (matches the backlog)
 
 1. Wire up routes/templates for: sequence detection (Epic 4), file splitting
