@@ -1,4 +1,4 @@
-# Tunisie Telecom — File Processing Tool (Web MVP)
+# Tunisie Telecom : File Processing Tool (Web MVP)
 
 A Flask + pandas web app implementing the file-processing internship brief:
 upload csv/txt/excel files, sort them, find & remove duplicates, compare or
