@@ -74,10 +74,10 @@ pytest tests/ -v
 
 ## Screenshots from the application
 
-![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image.png))
-![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image1.png))
-![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image2.png))
-![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image3.png))
+<img width="1890" height="928" alt="image" src="https://github.com/user-attachments/assets/fbe13727-f63b-4ea3-89af-b098e8a47adf" />
+<img width="1897" height="627" alt="image (1)" src="https://github.com/user-attachments/assets/a9279c94-57b4-415c-a56a-f375372d9275" />
+<img width="1917" height="843" alt="image (2)" src="https://github.com/user-attachments/assets/002ffd91-f53b-45d4-beac-71c9614eb066" />
+<img width="1833" height="932" alt="image (3)" src="https://github.com/user-attachments/assets/d6978f21-25e7-46b4-b596-76c863bc532b" />
 
 
 ## Next steps (matches the backlog)
