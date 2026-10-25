@@ -73,9 +73,11 @@ pytest tests/ -v
   a user can chain operations without re-uploading.
 
 ## Screenshots from the application
-
-
-
+https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image.png
+![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image.png))
+![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image1.png))
+![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image2.png))
+![Uploaded Image]([https://user-images.githubusercontent.com/12345678/example.png](https://github.com/koussay0/Files-Organization-System-TT/blob/main/tests/image3.png))
 
 
 ## Next steps (matches the backlog)
